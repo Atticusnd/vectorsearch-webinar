@@ -1,4 +1,4 @@
-# Semantic Search with MongoDB Atlas Vector Search and OpenAI Embbedings on a Mobile Application
+# Semantic Search with MongoDB Atlas Vector Search and OpenAI Embbedings on a RN Application
 
 This repository contains code and resources to Semantic Search with MongoDB Atlas Vector Search and embbedings API from OpenAI.
 
@@ -9,7 +9,8 @@ Semantic Search with MongoDB Atlas Vector Search is a powerful feature that allo
 ## Prerequisites
 
 - [MongoDB Atlas account](https://www.mongodb.com/atlas/database)
-- [OpenAI API Key](https://openai.com/blog/openai-api) 
+- [OpenAI API Key](https://openai.com/blog/openai-api)
+- [Expo Account](https://expo.dev/)
 
 ## Setup
 
