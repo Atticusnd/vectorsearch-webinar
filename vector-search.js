@@ -2,6 +2,9 @@ const axios = require('axios');
 const MongoClient = require('mongodb').MongoClient;
 require('dotenv').config();
 
+const MONGO_URI = process.env.MONGO_URI;
+
+
 async function getEmbedding(query) {
     // Define the OpenAI API url and key.
     const url = 'https://api.openai.com/v1/embeddings';
@@ -27,7 +30,7 @@ async function getEmbedding(query) {
 
 async function findSimilarDocuments(embedding) {
     const url = process.env.MONGO_URI; // Replace with your MongoDB url.
-    const client = new MongoClient("mongodb+srv://adanjimenez:sz9TeZ9rqC2XlxIz@cluster0.yfusl.mongodb.net/bookstore");
+    const client = new MongoClient(MONGO_URI);
     
     try {
         await client.connect();
